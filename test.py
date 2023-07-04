@@ -15,7 +15,7 @@ def get_driver():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
                               options=chrome_options)
     driver.maximize_window()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
     return driver
 
 def open_page(driver, url):
